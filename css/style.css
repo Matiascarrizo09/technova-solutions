@@ -36,18 +36,27 @@ header
         flex-direction: row;
     }
 
-/* CUSTOM */
+/* START */
 
         .HeaderLeft
         {
             width: 50%;
         }
 
-        .HeaderRight
+        .HeaderRight 
         {
             padding-right: 20px;
             width: 30%;
         }
+
+            .HeaderLeft a , .HeaderRight a
+            {
+                color: #ffffff;
+                text-decoration: none;
+
+            }
+
+/* END */
 
 a
 {
@@ -65,10 +74,6 @@ a
         opacity: 0.70;
     }
 
-        a img:hover, a img:active
-        {
-            opacity:none;
-        }
 img
 {
     margin: 10px 10px 10px 10px;
@@ -80,7 +85,6 @@ h1, h2, h3, h4, h5, h6
     color: #313131;
     margin: 4px 4px 4px 4px;
 }
-
 
 p, article
 {
