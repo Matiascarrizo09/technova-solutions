@@ -17,11 +17,27 @@ header
     padding: 20px 10px;
     display: flex;
     justify-content: space-between;
+    align-items:center;
 }
 
-    header p
+    header h1, header h2, header h3, header h4, header h5, header h6, header p
     {
         color:#ffffff;
+    }
+a
+{
+    transition:opacity 0.15s;
+    cursor:pointer;
+}
+
+    a:hover
+    {
+        opacity: 0.90;
+    }
+
+    a:active
+    {
+        opacity: 0.70;
     }
 
 img
@@ -29,14 +45,15 @@ img
     margin: 10px 10px 10px 10px;
 }
 
-h1
+h1, h2, h3, h4, h5, h6
 {
     font-family: Arial, Helvetica, sans-serif;
     color: #313131;
     margin: 4px 4px 4px 4px;
 }
 
-p
+
+p, article
 {
     font-family: Arial, Helvetica, sans-serif;
     color:#919191;
