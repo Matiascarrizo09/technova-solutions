@@ -1,12 +1,15 @@
 main
 {
-    background-color: #313131;
+    flex:1;
 }
 
-body
+html, body
 {
-    margin: 0px 0px 0px 0px;
+    height: 100%;
+    margin: 0;
     background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
 }
 
 header
@@ -15,6 +18,7 @@ header
     background-color: #313131;
     color:#ffffff;
     padding: 20px 10px;
+
     display: flex;
     justify-content: space-between;
     align-items:center;
@@ -24,6 +28,27 @@ header
     {
         color:#ffffff;
     }
+
+    header div
+    {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+
+/* CUSTOM */
+
+        .HeaderLeft
+        {
+            width: 50%;
+        }
+
+        .HeaderRight
+        {
+            padding-right: 20px;
+            width: 30%;
+        }
+
 a
 {
     transition:opacity 0.15s;
@@ -40,6 +65,10 @@ a
         opacity: 0.70;
     }
 
+        a img:hover, a img:active
+        {
+            opacity:none;
+        }
 img
 {
     margin: 10px 10px 10px 10px;
@@ -63,7 +92,7 @@ p, article
 button
 {
     border: none;
-    border-radius: 1em;
+    border-radius: 2em;
 
     margin:4px 8px 4px 8px;
 
@@ -71,7 +100,7 @@ button
 
     color:#ffffff;
     background-color: rgb(0, 89, 255);
-    padding:6px 12px 6px 12px;
+    padding:8px 12px 8px 12px;
     transition: opacity 0.15s;
     
     cursor: pointer;
