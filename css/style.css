@@ -1,0 +1,88 @@
+main
+{
+    background-color: #313131;
+}
+
+body
+{
+    margin: 0px 0px 0px 0px;
+    background-color: #ffffff;
+}
+
+header
+{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #313131;
+    color:#ffffff;
+    padding: 20px 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+    header p
+    {
+        color:#ffffff;
+    }
+
+img
+{
+    margin: 10px 10px 10px 10px;
+}
+
+h1
+{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #313131;
+    margin: 4px 4px 4px 4px;
+}
+
+p
+{
+    font-family: Arial, Helvetica, sans-serif;
+    color:#919191;
+    margin: 4px 8px 4px 8px;
+}
+
+button
+{
+    border: none;
+    border-radius: 1em;
+
+    margin:4px 8px 4px 8px;
+
+    font-size: 16px;
+
+    color:#ffffff;
+    background-color: rgb(0, 89, 255);
+    padding:6px 12px 6px 12px;
+    transition: opacity 0.15s;
+    
+    cursor: pointer;
+}
+
+    button:hover
+    {
+        opacity: 0.90;
+    }
+
+    button:active
+    {
+        opacity: 0.70;
+    }
+
+select
+{
+    border-width: 2px;
+    border-radius: 2em;
+    border-color: #313131;
+    color: #313131;
+    
+
+    margin:4px 8px 4px 8px;
+
+    font-size: 16px;
+
+    padding:5px 12px 5px 12px;
+    
+    cursor: pointer;
+}
