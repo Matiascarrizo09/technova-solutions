@@ -9,6 +9,10 @@
   padding: 0;
 }
 
+.HeaderLeft a {
+  text-decoration: none;
+}
+
 .HeaderRight a {
   font-family: Arial, Helvetica, sans-serif;
   color: #ffffff;
