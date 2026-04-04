@@ -9,6 +9,10 @@
   gap: 30px;
   flex-wrap: wrap;
 }
+.card-link {
+  text-decoration: none;
+  color: inherit;
+}
 
 
 .servicio {
@@ -19,9 +23,22 @@
   padding: 15px;
   margin-bottom: 100px;
   margin-top: 100px;
-  background-color: white;
+  background-color: rgb(250, 241, 253);
   border-radius: 10px; 
   box-shadow: 0 10px 10px rgba(0,0,0,0.2);
+  font-family:inherit, sans-serif;
+    transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.servicio:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+/* Click */
+.servicio:active {
+  transform: scale(0.99);
 }
 
 .servicio img {
@@ -31,4 +48,5 @@
 
 .servicio h3 {
   margin: 0;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
