@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <h2>PEDIDOS</h2>
+</html>
+<body>
+    <form action="pedido.html" method="post">
+        <div>
+            <label for="nombre">Nombre del cliente:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Nombre del cliente">
+        </div>
+
+        <br>
+
+        <div>
+            <label for="apellido">Apellido del cliente:</label>
+            <input type="text" id="apellido" name="apellido" placeholder="Apellido del cliente">
+        </div>
+
+        <br>
+        
+        <div>
+            <label for="pedido">Pedido:</label>
+            <input type="text" id="pedido" name="pedido" placeholder="Pedido">
+        </div>
+
+        <br>
+
+        <div>
+            <label for="telefono">Teléfono:</label>
+            <input type="number" id="telefono" name="telefono" placeholder="Teléfono">
+        </div>
+
+        <br>
+
+        <div>
+            <Label for="fecha">Fecha de entrega:</Label>
+            <input type="date" id="fecha" name="fecha">
+        </div>
+
+        <br>
+
+        <div>
+            <label for="pago">Método de pago:</label>
+            <select id="pago" name="pago">
+                <option value="efectivo">Efectivo</option>
+                <option value="tarjeta">Tarjeta</option>
+                <option value="transferencia">Transferencia</option>
+            </select>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="radio">¿Desea entrega a domicilio?</label>
+            <input type="radio" id="radio" name="radio" value="si">
+            <label for="radio">Sí</label>
+            <input type="radio" id="radio" name="radio" value="no">
+            <label for="radio">No</label>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="comentarios">Comentarios Adicionales:</label>
+            <br>
+            <textarea id="comentarios" name="comentarios" placeholder="Ingrese comentarios adicionales aquí..."></textarea>
+        </div>
+
+        <br>
+
+        <div>
+            <input type="reset" id="reiniciar" name="reiniciar" value="Reiniciar pedido">
+            <input type="submit" id="enviar" name="enviar" value="Enviar pedido">
+        </div>
+
+    </form>
