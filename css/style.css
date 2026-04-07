@@ -1,13 +1,14 @@
-main
-{
-    flex:1;
+main {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
 }
 
 html,
 body {
     height: 100%;
     margin: 0;
-    background-color: #ffffff;
+    background-color: #f5f5f5;
     display: flex;
     flex-direction: column;
 }
@@ -17,10 +18,15 @@ header {
     background-color: #313131;
     color: #ffffff;
     padding: 20px 10px;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
 }
 
 header h1,
@@ -40,7 +46,6 @@ header div {
 }
 
 /* START */
-
 .HeaderLeft {
     width: 50%;
 }
@@ -54,11 +59,9 @@ header div {
 .HeaderRight a {
     color: #ffffff;
     text-decoration: none;
-
 }
 
 /* END */
-
 a {
     transition: opacity 0.15s;
     cursor: pointer;
@@ -97,16 +100,12 @@ article {
 button {
     border: none;
     border-radius: 2em;
-
     margin: 4px 8px 4px 8px;
-
     font-size: 16px;
-
     color: #ffffff;
     background-color: rgb(0, 89, 255);
     padding: 8px 12px 8px 12px;
     transition: opacity 0.15s;
-
     cursor: pointer;
 }
 
@@ -123,15 +122,13 @@ select {
     border-radius: 2em;
     border-color: #313131;
     color: #313131;
-
-    margin:4px 8px 4px 8px;
+    margin: 4px 8px 4px 8px;
     font-size: 16px;
-    padding:5px 12px 5px 12px;
+    padding: 5px 12px 5px 12px;
     cursor: pointer;
 }
 
 /* FORM CONTACTO */
-
 .formContacto {
     background-color: #f5f5f5;
     padding: 20px;
@@ -153,6 +150,13 @@ select {
     border: 1px solid #ccc;
 }
 
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+}
+
 nav {
     display: flex;
     gap: 15px;
@@ -161,15 +165,12 @@ nav {
 
 nav h3 {
     margin: 0;
-
 }
 
 /* SERVICIOS */
-
 .servicios {
     padding: 20px;
 }
-
 
 .contenedor-servicios {
     gap: 30px;
@@ -181,7 +182,6 @@ nav h3 {
     color: inherit;
 }
 
-
 .servicio {
     display: flex;
     align-items: center;
@@ -190,7 +190,7 @@ nav h3 {
     padding: 15px;
     margin-bottom: 100px;
     margin-top: 100px;
-    background-color: rgb(250, 241, 253);
+    background-color: #546379;
     border-radius: 10px;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
     font-family: inherit;
@@ -198,9 +198,16 @@ nav h3 {
     cursor: pointer;
 }
 
-.servicio:hover {
-    transform: scale(1.02);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+
+.servicio,
+.Box {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.servicio:hover,
+.Box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 /* Click */
