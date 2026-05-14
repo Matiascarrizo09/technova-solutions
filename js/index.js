@@ -1,6 +1,6 @@
 const container = document.getElementById("services-container");
 
-fetch("https://g11-tp3-technovasolutions.onrender.com//services")
+fetch("https://g11-tp3-technovasolutions.onrender.com/services")
   .then((res) => res.json())
   .then((data) => {
     console.log("Servicios cargados:", data);

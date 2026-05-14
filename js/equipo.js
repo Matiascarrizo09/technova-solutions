@@ -1,6 +1,6 @@
 const container = document.getElementById("team-container");
 
-fetch("https://g11-tp3-technovasolutions.onrender.com//equipos")
+fetch("https://g11-tp3-technovasolutions.onrender.com/equipos")
   .then((res) => res.json())
   .then((data) => {
     data.forEach((persona) => {
