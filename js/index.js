@@ -1,11 +1,11 @@
 const container = document.getElementById("services-container");
 
-fetch("http://127.0.0.1:3000/services")
-  .then(res => res.json())
-  .then(data => {
+fetch("https://g11-tp3-technovasolutions.onrender.com//services")
+  .then((res) => res.json())
+  .then((data) => {
     console.log("Servicios cargados:", data);
 
-    data.forEach(service => {
+    data.forEach((service) => {
       const div = document.createElement("div");
 
       div.innerHTML = `
@@ -16,6 +16,6 @@ fetch("http://127.0.0.1:3000/services")
       container.appendChild(div);
     });
   })
-  .catch(err => {
+  .catch((err) => {
     console.error("Error al cargar servicios:", err);
   });
